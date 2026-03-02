@@ -24,7 +24,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                dir('Example_2/src') {
+                dir('Example_2') {
                     sh 'mvn test'
                 }
             }
