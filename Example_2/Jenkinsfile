@@ -26,11 +26,12 @@ pipeline {
             steps {
                 dir('Example_2') {
                     sh 'mvn test'
+		    junit 'target/surefire-reports/*.xml'
                 }
             }
             post {
                 always {
-                    junit 'Example_2/target/surefire-reports/*.xml'
+                   // junit 'Example_2/target/surefire-reports/*.xml'
                 }
             }
         }
