@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-    maven 'Maven'  // Replace 'Maven' with your exact installation name
-}
+	maven 'Maven'
+	}
 
     stages {
 
